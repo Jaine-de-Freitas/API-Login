@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <img id="logo" src="images/logo.png">
+        <h1 id="banco">Banco .br</h1>
+        <ul>
+            <li>Home</li>
+            <li>Conversor de Moedas</li>
+            <li>Cadastro</li>
+            <li>Login</li>
+        </ul>
+    </header>
+    <h1 id="titulo">Cadastro</h1>
+    <form class="formulario" name="formulario">
+    <div class="sobre">
+        <div class="alinhar-sobre">
+            <label for="nome">Nome Completo</label><br>
+            <input type="text" name="nome" id="nome" class="input" placeholder="ex: Maria Neves Barbosa" required><br>
+        </div>
+        <div class="alinhar-sobre">
+            <label for="cpf">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" class="input" placeholder="000.111.222-33" required><br>
+        </div>
+        <div class="alinhar-sobre">
+            <label for="aniversario">Data de Nascimento</label><br>
+            <input type="date" name="aniversario" id="aniversario" class="input" required><br>
+        </div>
+    </div>
+    <div class="endereco1">
+        <div class="alinhar-endereco">
+            <label for="cep">CEP</label><br>
+            <input type="text" name="cep" id="cep"  class="input" placeholder="ex: 12345-123" required onblur="Cep()"><br>
+        </div>
+        <div class="alinhar-endereco">
+            <label for="estado">Estado</label><br>
+            <input type="text" name="estado" id="estado" class="input" placeholder="ex: SP" required><br>
+        </div>
+        <div class="alinhar-endereco">
+            <label for="cidade">Cidade</label><br>
+            <input type="text" name="cidade" id="cidade" class="input" placeholder="ex: São Paulo" required><br>
+        </div>
+    </div>
+    <div class="endereco2">
+        <div class="alinhar-endereco">
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro" class="input" placeholder="ex: Bairro da Sé" required><br>
+        </div>
+        <div class="alinhar-endereco">
+            <label for="rua">Rua</label><br>
+            <input type="text" name="rua" id="rua" class="input"placeholder="ex: 7 de Setembro"><br>
+        </div>
+        <div class="alinhar-endereco">
+            <label for="numero">Numero da Casa</label><br>
+            <input type="number" name="numero" id="numero" class="input" placeholder="ex: 102"><br>
+        </div>
+    </div>
+    <div class="comunicacao">
+        <div class="alinhar-comunicacao">
+            <label for="telefone">Telefone/Celular</label><br>
+            <input type="text" name="telefone" id="telefone" class="input" placeholder="ex: (11)99999-8888" required><br>
+        </div>
+        <div class="alinhar-comunicacao">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" class="input" placeholder="ex: exemplo@gmail.com" required><br>
+        </div>
+        <div class="alinhar-comunicacao">
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha" class="input" placeholder="Uma senha forte!"><br>
+        </div>
+    </div>
+    <div id="alinha-botao">
+        <button id="botao" type="submit">REGISTRAR</button>
+    </div>
+    </form>
+</body>
+</html>
